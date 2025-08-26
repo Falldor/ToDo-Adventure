@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae5104a74b77464cb728320892ff0da, type: 3}
+  m_Name: ConversaInicial
+  m_EditorClassIdentifier: 
+  falas:
+  - personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    idDaExpressao: 0
+    TextoDasFalas:
+    - Seja muito bem vindo a guilda das tarefas
+    - "Nos somos responsaveis por realizar diversos servi\xE7os em troca de uma recompensa"
+  - personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
+    idDaExpressao: 0
+    TextoDasFalas:
+    - Eu vim me inscrever
+  - personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    idDaExpressao: 0
+    TextoDasFalas:
+    - "certo, voc\xEA est\xE1 dentro j\xE1"
+    - "agora vamos falar das miss\xF5es, existem diversos tipos de miss\xF5es mas
+      por enquanto temos somente de exterminar monstros"
+    - "toda vez que voc\xEA termina uma miss\xE3o voc\xEA volta para c\xE1 para pegar
+      a proxima miss\xE3o, se voc\xEA mantar uma constancia em miss\xF5es voc\xEA
+      ir\xE1 aumentar o seu rank "
+    - "todos come\xE7am com o rank C e vai at\xE9 o rank A, o rank serve para voc\xEA
+      pegar miss\xF5es com recompensas melhores"
+    - "agora isso \xE9 tudo, pegue essa miss\xE3o aqui e v\xE1 matar alguns goblins"

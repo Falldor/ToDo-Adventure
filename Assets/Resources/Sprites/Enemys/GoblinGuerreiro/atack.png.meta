@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: e5351e140bb3c204c80fe41d654624e6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4351722869336752566
+    second: Skeleton Warrior@atack_0
+  - first:
+      213: -5883312882223229788
+    second: Skeleton Warrior@atack_1
+  - first:
+      213: 2205123926695132557
+    second: Skeleton Warrior@atack_2
+  - first:
+      213: 8389679907569237652
+    second: Skeleton Warrior@atack_3
+  - first:
+      213: 3020908000822439449
+    second: Skeleton Warrior@atack_4
+  - first:
+      213: 1865450054897539671
+    second: Skeleton Warrior@atack_5
+  - first:
+      213: -8724551773960929802
+    second: Skeleton Warrior@atack_6
+  - first:
+      213: -2804716084026029327
+    second: Skeleton Warrior@atack_7
+  - first:
+      213: -4975158468648763514
+    second: Skeleton Warrior@atack_8
+  - first:
+      213: -6073307807564214431
+    second: Skeleton Warrior@atack_9
+  - first:
+      213: -3111061885690634826
+    second: Skeleton Warrior@atack_10
+  - first:
+      213: -4064713370029888210
+    second: Skeleton Warrior@atack_11
+  - first:
+      213: -996295269783477062
+    second: Skeleton Warrior@atack_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 12
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1c2cba4ec646c30800000000000000
+      internalID: 4351722869336752566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 12
+        width: 20
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a4da90da164a5ea0800000000000000
+      internalID: -5883312882223229788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_2
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 12
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8db060378c2a9e10800000000000000
+      internalID: 2205123926695132557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 12
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e75edec612e6470800000000000000
+      internalID: 8389679907569237652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_4
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 12
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e282042db6ce920800000000000000
+      internalID: 3020908000822439449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 12
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a966cf0f863e910800000000000000
+      internalID: 1865450054897539671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 12
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fdfd80e26a2ce680800000000000000
+      internalID: -8724551773960929802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_7
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 12
+        width: 34
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1facdc3e495a319d0800000000000000
+      internalID: -2804716084026029327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 12
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ff9e67bbfa4fab0800000000000000
+      internalID: -4975158468648763514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 12
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f478e0ab647bba0800000000000000
+      internalID: -6073307807564214431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 12
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd1725b2b943d4d0800000000000000
+      internalID: -3111061885690634826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 12
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2d6699c9bc3797c0800000000000000
+      internalID: -4064713370029888210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Warrior@atack_12
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 12
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab467211bb27c22f0800000000000000
+      internalID: -996295269783477062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a83af8c798beb0e49955adaa29c224ef
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Skeleton Warrior@atack_0: 4351722869336752566
+      Skeleton Warrior@atack_1: -5883312882223229788
+      Skeleton Warrior@atack_10: -3111061885690634826
+      Skeleton Warrior@atack_11: -4064713370029888210
+      Skeleton Warrior@atack_12: -996295269783477062
+      Skeleton Warrior@atack_2: 2205123926695132557
+      Skeleton Warrior@atack_3: 8389679907569237652
+      Skeleton Warrior@atack_4: 3020908000822439449
+      Skeleton Warrior@atack_5: 1865450054897539671
+      Skeleton Warrior@atack_6: -8724551773960929802
+      Skeleton Warrior@atack_7: -2804716084026029327
+      Skeleton Warrior@atack_8: -4975158468648763514
+      Skeleton Warrior@atack_9: -6073307807564214431
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
