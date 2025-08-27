@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 2848702712320616405}
   - component: {fileID: 1791563887690113266}
   m_Layer: 5
-  m_Name: button.text.dia (7)
+  m_Name: 07
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -492,7 +492,7 @@ GameObject:
   - component: {fileID: 2576946600800181813}
   - component: {fileID: 767047283749469124}
   m_Layer: 5
-  m_Name: button.text.dia (15)
+  m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -698,7 +698,7 @@ GameObject:
   - component: {fileID: 4400874177553395229}
   - component: {fileID: 4821910773755360938}
   m_Layer: 5
-  m_Name: button.text.dia (21)
+  m_Name: 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +904,7 @@ GameObject:
   - component: {fileID: 8375407624046754161}
   - component: {fileID: 1675523406671388534}
   m_Layer: 5
-  m_Name: button.text.dia (17)
+  m_Name: 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1110,7 +1110,7 @@ GameObject:
   - component: {fileID: 4771381003602364448}
   - component: {fileID: 7853724099659747773}
   m_Layer: 5
-  m_Name: button.text.dia (31)
+  m_Name: 31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1316,7 +1316,7 @@ GameObject:
   - component: {fileID: 917294893893484117}
   - component: {fileID: 3250114361098890109}
   m_Layer: 5
-  m_Name: button.text.dia (29)
+  m_Name: 29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1522,7 +1522,7 @@ GameObject:
   - component: {fileID: 2012255519214619539}
   - component: {fileID: 3902750742288935135}
   m_Layer: 5
-  m_Name: button.text.dia (1)
+  m_Name: 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1728,7 +1728,7 @@ GameObject:
   - component: {fileID: 1071599386167544938}
   - component: {fileID: 2286046829272580641}
   m_Layer: 5
-  m_Name: button.text.dia (35)
+  m_Name: 35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1934,7 +1934,7 @@ GameObject:
   - component: {fileID: 5353425511841324601}
   - component: {fileID: 7273420180181742963}
   m_Layer: 5
-  m_Name: button.text.dia (40)
+  m_Name: 40
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2140,7 +2140,7 @@ GameObject:
   - component: {fileID: 5123493610407137722}
   - component: {fileID: 9196094076654713513}
   m_Layer: 5
-  m_Name: button.text.dia (11)
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2346,7 +2346,7 @@ GameObject:
   - component: {fileID: 5206879432318276642}
   - component: {fileID: 5480977724236243130}
   m_Layer: 5
-  m_Name: button.text.dia (41)
+  m_Name: 41
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2824,7 +2824,7 @@ GameObject:
   - component: {fileID: 4925135501461365150}
   - component: {fileID: 1259416783378184280}
   m_Layer: 5
-  m_Name: button.text.dia (18)
+  m_Name: 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3030,7 +3030,7 @@ GameObject:
   - component: {fileID: 1565556460354234263}
   - component: {fileID: 3876634047402589229}
   m_Layer: 5
-  m_Name: button.text.dia (13)
+  m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3236,7 +3236,7 @@ GameObject:
   - component: {fileID: 4025816683500143084}
   - component: {fileID: 6636370664028817675}
   m_Layer: 5
-  m_Name: button.text.dia (24)
+  m_Name: 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3442,7 +3442,7 @@ GameObject:
   - component: {fileID: 5538016235928914647}
   - component: {fileID: 4076617232064040767}
   m_Layer: 5
-  m_Name: button.text.dia (34)
+  m_Name: 34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3648,7 +3648,7 @@ GameObject:
   - component: {fileID: 6389734537817408006}
   - component: {fileID: 2103270013519839305}
   m_Layer: 5
-  m_Name: button.text.dia (5)
+  m_Name: 05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4085,6 +4085,7 @@ MonoBehaviour:
   - {fileID: 7800351860270454328}
   - {fileID: 7485375131784373016}
   _mesAnoTexto: {fileID: 1414727978175444317}
+  _diaSelect: {fileID: 0}
 --- !u!1 &2284668338179094623
 GameObject:
   m_ObjectHideFlags: 0
@@ -4099,7 +4100,7 @@ GameObject:
   - component: {fileID: 533477386386834067}
   - component: {fileID: 799690512078388204}
   m_Layer: 5
-  m_Name: button.text.dia (23)
+  m_Name: 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4305,7 +4306,7 @@ GameObject:
   - component: {fileID: 6669518718637638555}
   - component: {fileID: 6338045653729941869}
   m_Layer: 5
-  m_Name: button.text.dia (37)
+  m_Name: 37
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4780,7 +4781,7 @@ GameObject:
   - component: {fileID: 4259267298571922510}
   - component: {fileID: 5583572272561371865}
   m_Layer: 5
-  m_Name: button.text.dia (2)
+  m_Name: 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4986,7 +4987,7 @@ GameObject:
   - component: {fileID: 428583590031805328}
   - component: {fileID: 3942584432646684363}
   m_Layer: 5
-  m_Name: button.text.dia (39)
+  m_Name: 39
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5325,7 +5326,7 @@ GameObject:
   - component: {fileID: 479745070869490517}
   - component: {fileID: 4392451200684169561}
   m_Layer: 5
-  m_Name: button.text.dia (14)
+  m_Name: 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5667,7 +5668,7 @@ GameObject:
   - component: {fileID: 1558837263897341867}
   - component: {fileID: 2259883560752474230}
   m_Layer: 5
-  m_Name: button.text.dia (10)
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5873,7 +5874,7 @@ GameObject:
   - component: {fileID: 4776364724996067201}
   - component: {fileID: 6066948218561116428}
   m_Layer: 5
-  m_Name: button.text.dia (9)
+  m_Name: 09
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6079,7 +6080,7 @@ GameObject:
   - component: {fileID: 6500354734954787283}
   - component: {fileID: 7561669066994162321}
   m_Layer: 5
-  m_Name: button.text.dia (6)
+  m_Name: 06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6285,7 +6286,7 @@ GameObject:
   - component: {fileID: 4468514681365832087}
   - component: {fileID: 5049081506645799506}
   m_Layer: 5
-  m_Name: button.text.dia (38)
+  m_Name: 38
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6491,7 +6492,7 @@ GameObject:
   - component: {fileID: 1760619043116817626}
   - component: {fileID: 5268708824956012912}
   m_Layer: 5
-  m_Name: button.text.dia (22)
+  m_Name: 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6966,7 +6967,7 @@ GameObject:
   - component: {fileID: 8430564008411995732}
   - component: {fileID: 8240999466227425300}
   m_Layer: 5
-  m_Name: button.text.dia (33)
+  m_Name: 33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7172,7 +7173,7 @@ GameObject:
   - component: {fileID: 3855575581935197701}
   - component: {fileID: 7154863364512188675}
   m_Layer: 5
-  m_Name: button.text.dia (19)
+  m_Name: 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7378,7 +7379,7 @@ GameObject:
   - component: {fileID: 2071723074866686021}
   - component: {fileID: 4696323021443659209}
   m_Layer: 5
-  m_Name: button.text.dia (26)
+  m_Name: 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7584,7 +7585,7 @@ GameObject:
   - component: {fileID: 2772739895853878443}
   - component: {fileID: 926641016057998472}
   m_Layer: 5
-  m_Name: button.text.dia (32)
+  m_Name: 32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7790,7 +7791,7 @@ GameObject:
   - component: {fileID: 7405294717784043250}
   - component: {fileID: 8763098807589247753}
   m_Layer: 5
-  m_Name: button.text.dia (28)
+  m_Name: 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8165,7 +8166,7 @@ GameObject:
   - component: {fileID: 1868230387992787120}
   - component: {fileID: 8566905707340751050}
   m_Layer: 5
-  m_Name: button.text.dia (20)
+  m_Name: 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8371,7 +8372,7 @@ GameObject:
   - component: {fileID: 5078245401158063535}
   - component: {fileID: 4124673022403059548}
   m_Layer: 5
-  m_Name: button.text.dia (36)
+  m_Name: 36
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8577,7 +8578,7 @@ GameObject:
   - component: {fileID: 3347489452233812004}
   - component: {fileID: 8515940163171130219}
   m_Layer: 5
-  m_Name: button.text.dia
+  m_Name: 00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8919,7 +8920,7 @@ GameObject:
   - component: {fileID: 5120954810760528067}
   - component: {fileID: 4608333727000328819}
   m_Layer: 5
-  m_Name: button.text.dia (12)
+  m_Name: 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9194,7 +9195,7 @@ GameObject:
   - component: {fileID: 6707551262294578668}
   - component: {fileID: 188266098612048146}
   m_Layer: 5
-  m_Name: button.text.dia (16)
+  m_Name: 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9672,7 +9673,7 @@ GameObject:
   - component: {fileID: 6263477281558140128}
   - component: {fileID: 5035380880671348449}
   m_Layer: 5
-  m_Name: button.text.dia (25)
+  m_Name: 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9878,7 +9879,7 @@ GameObject:
   - component: {fileID: 7638243786634722004}
   - component: {fileID: 8872133442313950212}
   m_Layer: 5
-  m_Name: button.text.dia (4)
+  m_Name: 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10084,7 +10085,7 @@ GameObject:
   - component: {fileID: 5157172170327339678}
   - component: {fileID: 3149447959158504340}
   m_Layer: 5
-  m_Name: button.text.dia (8)
+  m_Name: 08
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10426,7 +10427,7 @@ GameObject:
   - component: {fileID: 4106937779037134162}
   - component: {fileID: 8195572060721833334}
   m_Layer: 5
-  m_Name: button.text.dia (27)
+  m_Name: 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10632,7 +10633,7 @@ GameObject:
   - component: {fileID: 6021310027915824571}
   - component: {fileID: 6485258855850662980}
   m_Layer: 5
-  m_Name: button.text.dia (30)
+  m_Name: 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10974,7 +10975,7 @@ GameObject:
   - component: {fileID: 4509981671171652771}
   - component: {fileID: 7035929258530330435}
   m_Layer: 5
-  m_Name: button.text.dia (3)
+  m_Name: 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

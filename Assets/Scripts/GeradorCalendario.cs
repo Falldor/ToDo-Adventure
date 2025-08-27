@@ -18,6 +18,10 @@ public class GeradorCalendario : MonoBehaviour
     private DateTimeFormatInfo _traducao;
 
 
+    public void Awake()
+    {
+         _traducao = CultureInfo.GetCultureInfo("pt-BR").DateTimeFormat;
+    }
 
     private void Start()
     {
@@ -30,7 +34,7 @@ public class GeradorCalendario : MonoBehaviour
         _dataCalendarioExibido = DateTime.Today;
 
         //Define o idioma em que o calendário será exibido
-        _traducao = CultureInfo.GetCultureInfo("pt-BR").DateTimeFormat;
+       
 
         GerarSemanas();
 
@@ -64,9 +68,10 @@ public class GeradorCalendario : MonoBehaviour
         //DayOfWeek é um enum. Você pode pegar o índice de um enum se você der cast de int nele. Nesse caso os índices vão de domingo a sábado, sendo domingo 0 e sábado 6
         for (int i = (int)primeiroDia.DayOfWeek, dia = 1; dia <= DateTime.DaysInMonth(_dataCalendarioExibido.Year, _dataCalendarioExibido.Month); i++, dia++)
         {
-            if (dia == DateTime.Now.Day)
+            if (_dataCalendarioExibido.Month == DateTime.Now.Month && _diaSelect == null)
             {
-                _dias[i].getDate();
+                if (dia == DateTime.Now.Day) { _dias[i].getDate(); }
+                else { _dias[i].GetComponent<TextMeshProUGUI>().color = Color.white; }
             }
             //Ativa o dia            
             _dias[i].SetDiaAtivo(true);
@@ -78,10 +83,12 @@ public class GeradorCalendario : MonoBehaviour
 
     public void AlteraMes(int sentido)
     {
-        //Atualiza o mês de acordo com o sentido
-        _dataCalendarioExibido = _dataCalendarioExibido.AddMonths(sentido);
+        if (_dataCalendarioExibido.AddMonths(sentido).Month >= DateTime.Now.Month)
+        {
+            _dataCalendarioExibido = _dataCalendarioExibido.AddMonths(sentido);
+        }
 
-        //Gera novamente os dias certos
+        if(_diaSelect != null){DeselectDay();}
         GerarDias();
         SetTextoMesAno();
     }
@@ -91,7 +98,8 @@ public class GeradorCalendario : MonoBehaviour
         //Atualiza o ano de acordo com o sentido
         _dataCalendarioExibido = _dataCalendarioExibido.AddYears(sentido);
 
-        //Gera novamente os dias certos
+        
+        if(_diaSelect != null){DeselectDay();}
         GerarDias();
         SetTextoMesAno();
     }
@@ -107,7 +115,8 @@ public class GeradorCalendario : MonoBehaviour
 
     public string[] submit()
     {
-        string[] data = new string[3]{_diaSelect.GetComponent<TextMeshProUGUI>().text, _mesAnoTexto.text.Split(" ")[0],
+        string[] data = new string[3]{int.Parse(_diaSelect.GetComponent<TextMeshProUGUI>().text).ToString("00"),
+            _mesAnoTexto.text.Split(" ")[0],
             _mesAnoTexto.text.Split(" ")[1]};
 
         return data;
@@ -125,6 +134,25 @@ public class GeradorCalendario : MonoBehaviour
             _diaSelect = dia;
         }
         _diaSelect.GetComponent<TextMeshProUGUI>().color = Color.red;
-        
+    }
+
+    public void DeselectDay()
+    {
+        _diaSelect.GetComponent<TextMeshProUGUI>().color = Color.white;
+        _diaSelect = null;
+    }
+
+    public void SetInformations(DateTime data)
+    {
+
+        AlteraMes(data.Month - _dataCalendarioExibido.Month);
+        AlteraAno(data.Year - _dataCalendarioExibido.Year);
+        foreach (Dia dia in _dias)
+        {
+            if (dia.GetDiaTexto() == data.Day.ToString("00"))
+            {
+                dia.getDate();
+            }
+        }
     }
 }

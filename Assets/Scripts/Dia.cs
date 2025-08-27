@@ -16,6 +16,11 @@ public class Dia : MonoBehaviour
         _diaTexto.gameObject.SetActive(ativo);
     }
 
+    public string GetDiaTexto()
+    {
+        return int.Parse(_diaTexto.text).ToString("00");
+    }
+
     public void AtualizarDiaTexto(string dia)
     {
         _diaTexto.text = dia;

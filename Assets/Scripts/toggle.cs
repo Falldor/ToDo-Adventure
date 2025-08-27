@@ -5,76 +5,68 @@ public class toggle : MonoBehaviour
 {
     [SerializeField] private Sprite on;
     [SerializeField] private Sprite off;
-
     [SerializeField] private GameObject[] objetos;
+    private Sprite buttonImage;
+    private bool state;
+    private Button button;
 
-
-    private bool stateObject;
-    private Toggle button;
-
-    void Awake()
+    void Start()
     {
         for (int i = 0; i < objetos.Length; i++)
         {
             objetos[i].SetActive(false);
         }
-        stateObject = false;
-        button = GetComponent<Toggle>();
+        state = false;
+        button = GetComponent<Button>();
     }
+
     public void change()
     {
-        if (button.isOn)
+        if (!state)
         {
-            GetComponentInChildren<Image>().sprite = on;
+            gameObject.GetComponent<Image>().sprite = on;
+
+            state = true;
         }
         else
         {
-            GetComponentInChildren<Image>().sprite = off;
+            gameObject.GetComponent<Image>().sprite = off;
+            state = false;
         }
+        changeObjectsState();
     }
 
-    public void changeActiveObject()
+    private void changeObjectsState()
     {
-        if (stateObject == false)
-        {
-            for (int i = 0; i < objetos.Length; i++)
-            {
-                objetos[i].SetActive(true);
-            }
-            stateObject = true;
-        }
-        else
-        {
-            for (int i = 0; i < objetos.Length; i++)
-            {
-                objetos[i].SetActive(false);
-            }
-            stateObject = false;
-        }
-    }
 
-    public void setToggleOff()
-    {
-        GetComponentInChildren<Image>().sprite = off;
-        if (stateObject != false)
-        {
-           button.isOn = false; 
-        }
         for (int i = 0; i < objetos.Length; i++)
         {
-            objetos[i].SetActive(false);
+            objetos[i].SetActive(state);
         }
-        stateObject = false;
     }
 
-    public void OnDisable()
+    public void setStateTrue()
     {
-        GetComponentInChildren<Image>().sprite = off;
-        button.isOn = false;
+        this.state = true;
+        gameObject.GetComponent<Image>().sprite = on;
         for (int i = 0; i < objetos.Length; i++)
         {
-            objetos[i].SetActive(false);
+            objetos[i].SetActive(true);
         }
-        stateObject = false;
+    }
+
+    public bool GetState()
+    {
+        return state;
+    }
+
+    void OnDisable()
+    {
+        if (state)
+        {
+            state = false;
+            gameObject.GetComponent<Image>().sprite = off;
+            changeObjectsState();
+        }
     }
 }

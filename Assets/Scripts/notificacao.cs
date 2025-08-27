@@ -13,8 +13,15 @@ public class notificacao : MonoBehaviour
     void Start()
     {
         objetoPai.SetActive(false);
-        _diasInput.text =  "00";
-        _horasInput.text =  "00";
+        _diasInput.text = "00";
+        _horasInput.text = "00";
+        _minutosInput.text = "00";
+    }
+
+    void OnDisable()
+    {
+        _diasInput.text = "00";
+        _horasInput.text = "00";
         _minutosInput.text = "00";
     }
 
@@ -55,7 +62,14 @@ public class notificacao : MonoBehaviour
 
     public int[] submit()
     {
-        int[] horario = new int[3] { int.Parse(_diasInput.text), int.Parse(_horasInput.text), int.Parse(_minutosInput.text)};
+        int[] horario = new int[3] { int.Parse(_diasInput.text), int.Parse(_horasInput.text), int.Parse(_minutosInput.text) };
         return horario;
+    }
+
+    public void SetInformations(int[] horario)
+    {
+        _diasInput.text = horario[0].ToString("00");
+        _horasInput.text = horario[1].ToString("00");
+        _minutosInput.text = horario[2].ToString("00");
     }
 }

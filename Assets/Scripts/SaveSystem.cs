@@ -4,7 +4,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class SaveSystem
 {
-    /*
+    
     public static void Salvar(Data save, string filemName)
     {
         BinaryFormatter formatter = new BinaryFormatter();
@@ -27,5 +27,5 @@ public static class SaveSystem
             stream.Close();
             return save;
         }else{ return null; }
-    }*/
+    }
 }
