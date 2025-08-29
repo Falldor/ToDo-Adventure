@@ -71,9 +71,8 @@ public class TarefasController : MonoBehaviour
 
     private DateTime convertToDateTime(int[] horario, string[] data)
     {
-        Debug.Log($"{data[0]}/{data[1]}/{data[2]} {horario[0]:00}:{horario[1]:00}");
-        return DateTime.ParseExact($"{data[0]}/{data[1]}/{data[2]} {horario[0]:00}:{horario[1]:00}",
-        "dd/MMM/yyyy HH:mm", new CultureInfo("pt-BR"));
+        return DateTime.ParseExact($"{data[0]}/{int.Parse(data[1]):00}/{data[2]} {horario[0]:00}:{horario[1]:00}",
+        "dd/MM/yyyy HH:mm", new CultureInfo("pt-BR"));
     }
 
     void OnApplicationQuit()
@@ -101,9 +100,10 @@ public class TarefasController : MonoBehaviour
                     }
                     else
                     {
-                        CreateCard(dados.tarefasTextos[i],
-                        Array.ConvertAll(dados.temposRestantes[i].Split(" ")[1].Split(":"), int.Parse),
-                        dados.temposRestantes[i].Split(" "));
+                        string[] dataHorario = dados.temposRestantes[i].Split(" ");
+                        int[] horario = Array.ConvertAll(dataHorario[1].Split(":"), int.Parse);
+                        string[] data = dataHorario[0].Split("/");
+                        CreateCard(dados.tarefasTextos[i], horario, data);
                     }
                 }
                 else

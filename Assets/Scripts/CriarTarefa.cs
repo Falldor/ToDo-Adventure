@@ -1,7 +1,5 @@
 using System;
 using TMPro;
-using Unity.Android.Gradle.Manifest;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -34,6 +32,8 @@ public class CriarTarefa : MonoBehaviour
         if (_textoTarefaInput.text.Length > 1)
         {
             buttonSalvar.gameObject.SetActive(true);
+            if (_horario.Length > 0){ toggle_addTempoLimite.change(); }
+        
         }
         else { buttonSalvar.gameObject.SetActive(false); }
     }
@@ -92,7 +92,6 @@ public class CriarTarefa : MonoBehaviour
         
         if (horario.Year != 0001)
         {
-            toggle_addTempoLimite.setStateTrue();
             GetComponentInChildren<GeradorCalendario>().SetInformations(horario);
             GetComponentInChildren<GeradorHorario>().SetInformations(horario);
         }

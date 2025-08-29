@@ -55,7 +55,7 @@ public class GeradorCalendario : MonoBehaviour
     private void SetTextoMesAno()
     {
         //Atualiza o texto que mostra o mês e o ano
-        _mesAnoTexto.text = string.Format("{0} {1}", _traducao.GetAbbreviatedMonthName(_dataCalendarioExibido.Month).ToUpper(), _dataCalendarioExibido.Year.ToString());
+        _mesAnoTexto.text = string.Format("{0} {1}",_dataCalendarioExibido.Month, _dataCalendarioExibido.Year.ToString());
     }
     private void GerarDias()
     {
