@@ -68,8 +68,8 @@ public class Tarefa : MonoBehaviour
 
     public void EditTarefa(Button button)
     {
-        ViewController.Instance.OpenView(nomesPrefabs.CriarTarefa, button);
-        ViewController.Instance.GetViewAtual().GetComponent<CriarTarefa>().StartEdit(_id, _textoTarefa.text, _tempoRestante, _tempoNotificao);
+        
+        CriarTarefa.instance.StartEdit(_id, _textoTarefa.text, _tempoRestante, _tempoNotificao, button);
     }
 
     public void SetInformation(string textoTarefa, DateTime data, int[] horarioNotificacao)

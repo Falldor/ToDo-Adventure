@@ -71,13 +71,15 @@ public class TarefasController : MonoBehaviour
 
     private DateTime convertToDateTime(int[] horario, string[] data)
     {
+        Debug.Log($"{data[0]}/{data[1]}/{data[2]} {horario[0]:00}:{horario[1]:00}");
         return DateTime.ParseExact($"{data[0]}/{data[1]}/{data[2]} {horario[0]:00}:{horario[1]:00}",
         "dd/MMM/yyyy HH:mm", new CultureInfo("pt-BR"));
     }
 
     void OnApplicationQuit()
     {
-        Data dados = new Data(_tarefas);
+        
+        Data dados = new DataTarefa(_tarefas);
         SaveSystem.Salvar(dados, _savePath);
     }
 
@@ -85,30 +87,31 @@ public class TarefasController : MonoBehaviour
     {
         if (SaveSystem.Load(_savePath) != null)
         {
-            Data dados = SaveSystem.Load(_savePath);
-            for (int i = 0; i < dados.textoTarefas.Length; i++)
+            DataTarefa dados = (DataTarefa)SaveSystem.Load(_savePath);
+            for (int i = 0; i < dados.tarefasTextos.Length; i++)
             {
-                if (dados.temposRestante[i] != "null")
+                if (dados.temposRestantes[i] != "null")
                 {
-                    if (dados.tempoNotificoes[i] != "null")
+                    if (dados.tempoNotificacao[i] != "null")
                     {
-                        CreateCard(dados.textoTarefas[i],
-                        Array.ConvertAll(dados.temposRestante[i].Split(" ")[1].Split(":"), int.Parse),
-                        dados.temposRestante[i].Split(" "), Array.ConvertAll(dados.tempoNotificoes[i].Split(","), int.Parse));
+                        string[] dataHorario = dados.temposRestantes[i].Split(" ");
+                        int[] horario = Array.ConvertAll(dataHorario[1].Split(":"), int.Parse);
+                        string[] data = dataHorario[0].Split("/");
+                        CreateCard(dados.tarefasTextos[i],horario,data);
                     }
                     else
                     {
-                        CreateCard(dados.textoTarefas[i],
-                        Array.ConvertAll(dados.temposRestante[i].Split(" ")[1].Split(":"), int.Parse),
-                        dados.temposRestante[i].Split(" "));
+                        CreateCard(dados.tarefasTextos[i],
+                        Array.ConvertAll(dados.temposRestantes[i].Split(" ")[1].Split(":"), int.Parse),
+                        dados.temposRestantes[i].Split(" "));
                     }
                 }
                 else
                 {
-                    CreateCard(dados.textoTarefas[i]);
+                    CreateCard(dados.tarefasTextos[i]);
                 }
             }
         }
-    }
+    } 
 
 }

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class CriarTarefa : MonoBehaviour
 {
+    public static CriarTarefa instance;
 
     [SerializeField] private TMP_InputField _textoTarefaInput;
 
@@ -21,11 +22,20 @@ public class CriarTarefa : MonoBehaviour
 
     [SerializeField] private Button buttonCriar;
     [SerializeField] private Button buttonSalvar;
+
+    void Awake() => instance = this;
     void Start()
     {
         _data = new string[3];
-        buttonCriar.gameObject.SetActive(true);
-        buttonSalvar.gameObject.SetActive(false);
+    }
+
+    void OnEnable()
+    {
+        if (_textoTarefaInput.text.Length > 1)
+        {
+            buttonSalvar.gameObject.SetActive(true);
+        }
+        else { buttonSalvar.gameObject.SetActive(false); }
     }
 
     public void SetHorarioNotificacao(int[] horario)
@@ -74,12 +84,12 @@ public class CriarTarefa : MonoBehaviour
         CloseView();
     }
 
-    public void StartEdit(int id, string tarefaTexto, DateTime horario, int[] horarioNotificacao)
+    public void StartEdit(int id, string tarefaTexto, DateTime horario, int[] horarioNotificacao, Button button)
     {
-        buttonCriar.gameObject.SetActive(false);
-        buttonSalvar.gameObject.SetActive(true);
-        this._id = id;
         this._textoTarefaInput.text = tarefaTexto;
+        ViewController.Instance.OpenView(nomesPrefabs.CriarTarefa, button);
+        this._id = id;
+        
         if (horario.Year != 0001)
         {
             toggle_addTempoLimite.setStateTrue();
