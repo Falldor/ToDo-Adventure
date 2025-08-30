@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8975545336577526527}
   - component: {fileID: 924105083985724960}
   - component: {fileID: 645581525577982691}
-  - component: {fileID: 6764516784191060301}
+  - component: {fileID: 7783022488850884124}
   m_Layer: 0
   m_Name: Inimigo 2-2
   m_TagString: Untagged
@@ -29,10 +29,11 @@ Transform:
   m_GameObject: {fileID: 4816406536576583341}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.17, y: 0.01, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6988271644987537171}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8975545336577526527
@@ -158,7 +159,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &6764516784191060301
+--- !u!114 &7783022488850884124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,8 +168,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 4816406536576583341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 120309a2e06db6e4fb7703adbb8d8d5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 12303d14ba0848146a4a4785772f7bbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   velocidade: 2
-  vida: 1
+  vida: 2
+  _prefabMagia: {fileID: 2256061717087705218, guid: 002c202f19fa6e94e835101144989009, type: 3}
+  _magiaSpanw: {fileID: 0}
+--- !u!1 &8031550940077395815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6988271644987537171}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6988271644987537171
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8031550940077395815}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.719, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3323604062043200723}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

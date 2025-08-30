@@ -57,11 +57,14 @@ public class Tarefa : MonoBehaviour
     {
         //lojaController.Instance.AddDinheiro(1);
         //TarefasController.Instance.SetNumTarefasConcluidas(1);
-        delete();
+        EventsManager.instance.TarefaConcluida();
+        TarefasController.Instance.TarefaComplete(_id);
+        Destroy(gameObject);
     }
 
     public void delete()
     {
+        EventsManager.instance.TarefaDeletada();
         TarefasController.Instance.TarefaComplete(_id);
         Destroy(gameObject);
     }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7773279024792374936}
   - component: {fileID: 5823774560269187054}
   - component: {fileID: 3902282137964716799}
-  - component: {fileID: 2300957643324249024}
   - component: {fileID: 6465306801952088908}
+  - component: {fileID: 7635720679541091279}
   m_Layer: 0
   m_Name: Inimigo 1-1
   m_TagString: Untagged
@@ -136,20 +136,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 4.3531117, y: 7.748196}
   m_EdgeRadius: 0
---- !u!114 &2300957643324249024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1814289441921999461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 120309a2e06db6e4fb7703adbb8d8d5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidade: 2
-  vida: 1
 --- !u!95 &6465306801952088908
 Animator:
   serializedVersion: 7
@@ -172,3 +158,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7635720679541091279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814289441921999461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12303d14ba0848146a4a4785772f7bbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 2
+  vida: 2

@@ -1,5 +1,5 @@
 public enum nomesPrefabs
 {
     CriarTarefa,
-    EditarTarefa
+    MetaTarefasConfig
 }

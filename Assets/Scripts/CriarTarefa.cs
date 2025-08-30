@@ -60,6 +60,7 @@ public class CriarTarefa : MonoBehaviour
         {
             TarefasController.Instance.CreateCard(_textoTarefaInput.text);
         }
+        EventsManager.instance.TarefaCriada();
         _textoTarefaInput.text = "";
         CloseView();
     }

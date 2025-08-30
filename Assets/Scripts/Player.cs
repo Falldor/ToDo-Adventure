@@ -10,7 +10,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        
+        EventsManager.instance.tarefaConcluida += ataque;
     }
     public void StartRun()
     {
