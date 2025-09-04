@@ -23,8 +23,8 @@ public class DataTarefa : Data
             tarefasTextos[contador] = tarefa.GetTarefaTexto();
             temposRestantes[contador] = tarefa.GetTempoRestante();
             tempoNotificacao[contador] = tarefa.GetTempoNotificacao();
-            Debug.Log(tempoNotificacao[contador]);
             contador++;
+            
         }
 
         

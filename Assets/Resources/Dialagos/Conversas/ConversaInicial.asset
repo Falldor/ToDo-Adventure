@@ -9,28 +9,52 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aae5104a74b77464cb728320892ff0da, type: 3}
+  m_Script: {fileID: 11500000, guid: dcf2e08fb783f2a4fadad2e37c37dfed, type: 3}
   m_Name: ConversaInicial
   m_EditorClassIdentifier: 
-  falas:
-  - personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
-    idDaExpressao: 0
+  Falas:
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
     TextoDasFalas:
-    - Seja muito bem vindo a guilda das tarefas
-    - "Nos somos responsaveis por realizar diversos servi\xE7os em troca de uma recompensa"
-  - personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
-    idDaExpressao: 0
+    - 'Seja muito bem vindo a guilda de tarefas, eu sou o mestre da guilda '
+  - Personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
+    IdDaExpressao: 0
     TextoDasFalas:
-    - Eu vim me inscrever
-  - personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
-    idDaExpressao: 0
+    - "Muito obriga por essa recep\xE7\xE3o, mas por que eu j\xE1 estou aqui fora??"
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
     TextoDasFalas:
-    - "certo, voc\xEA est\xE1 dentro j\xE1"
-    - "agora vamos falar das miss\xF5es, existem diversos tipos de miss\xF5es mas
-      por enquanto temos somente de exterminar monstros"
-    - "toda vez que voc\xEA termina uma miss\xE3o voc\xEA volta para c\xE1 para pegar
-      a proxima miss\xE3o, se voc\xEA mantar uma constancia em miss\xF5es voc\xEA
-      ir\xE1 aumentar o seu rank "
-    - "todos come\xE7am com o rank C e vai at\xE9 o rank A, o rank serve para voc\xEA
-      pegar miss\xF5es com recompensas melhores"
-    - "agora isso \xE9 tudo, pegue essa miss\xE3o aqui e v\xE1 matar alguns goblins"
+    - "Estamos com pouca m\xE3o de obra, ent\xE3o todo mundo tem que botar a m\xE3o
+      na massa"
+  - Personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "Disse quem est\xE1 s\xF3 observando de longe"
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - deixe isso de lado, vamos ao que realmente importa
+    - "aqui susas tarefas s\xE3o o que move tudo, toda vez que voc\xEA comprir uma
+      tarefa seu personagem ir\xE1 atacar"
+  - Personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "com quem voc\xEA est\xE1 falando?"
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "Mas quando voc\xEA deletar uma tarefa ou o tempo dela acabar, voc\xEA quem
+      tomara o ataque"
+    - "e cuidado esses monstro s\xE3o m\xE3o leve toda vez que te atacam levam um
+      parte do seu dinheiro"
+  - Personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "que?? Meu dinheiro n\xE3o?? "
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "N\xE3o se preocupe toda vez que voc\xEA conclui uma atividade voc\xEA ganha
+      dinheiro ent\xE3o vai dar tudo certo"
+    - "Por que n\xE3o come\xE7amos? Crie uma nova tarefa clicando no simbolo de +.
+      Pode ser qualquer coisa, at\xE9 o menor quer seja"

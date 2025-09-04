@@ -89,6 +89,7 @@ public class TarefasController : MonoBehaviour
             DataTarefa dados = (DataTarefa)SaveSystem.Load(_savePath);
             for (int i = 0; i < dados.tarefasTextos.Length; i++)
             {
+                
                 if (dados.temposRestantes[i] != "null")
                 {
                     if (dados.tempoNotificacao[i] != "null")
@@ -96,13 +97,14 @@ public class TarefasController : MonoBehaviour
                         string[] dataHorario = dados.temposRestantes[i].Split(" ");
                         int[] horario = Array.ConvertAll(dataHorario[1].Split(":"), int.Parse);
                         string[] data = dataHorario[0].Split("/");
-                        CreateCard(dados.tarefasTextos[i],horario,data);
+                        CreateCard(dados.tarefasTextos[i], horario, data, Array.ConvertAll(dados.tempoNotificacao[i].Split(","), int.Parse));
                     }
                     else
                     {
                         string[] dataHorario = dados.temposRestantes[i].Split(" ");
                         int[] horario = Array.ConvertAll(dataHorario[1].Split(":"), int.Parse);
                         string[] data = dataHorario[0].Split("/");
+                        
                         CreateCard(dados.tarefasTextos[i], horario, data);
                     }
                 }

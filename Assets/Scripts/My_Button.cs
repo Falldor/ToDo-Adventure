@@ -11,4 +11,6 @@ public class My_Button : MonoBehaviour
 
    public void CriarTarefaView() => OpenView(nomesPrefabs.CriarTarefa);
    public void MetaTarefasView() => OpenView(nomesPrefabs.MetaTarefasConfig);
+   public void EstatisticaView() => OpenView(nomesPrefabs.ViewEstatistica);
+   public void ViewLoja() => OpenView(nomesPrefabs.ViewLoja);
 }

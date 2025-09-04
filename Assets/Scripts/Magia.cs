@@ -6,6 +6,7 @@ public class Magia : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     [SerializeField] private float velocidade = 2;
+    public int dano = 1;
 
     void Awake()
     {
@@ -21,8 +22,13 @@ public class Magia : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         animator.SetTrigger("colision");
-        collision.transform.GetComponent<Enemy>().DanoRecebido(1);
+        collision.transform.GetComponent<Enemy>().DanoRecebido(dano);
         
+    }
+
+    public void setDano(int dano)
+    {
+        this.dano = dano;
     }
 
     public void animationFinish()

@@ -32,7 +32,6 @@ public class CriarTarefa : MonoBehaviour
         if (_textoTarefaInput.text.Length > 1)
         {
             buttonSalvar.gameObject.SetActive(true);
-            if (_horario.Length > 0){ toggle_addTempoLimite.change(); }
         
         }
         else { buttonSalvar.gameObject.SetActive(false); }
@@ -93,12 +92,14 @@ public class CriarTarefa : MonoBehaviour
         
         if (horario.Year != 0001)
         {
+            toggle_addTempoLimite.change();
             GetComponentInChildren<GeradorCalendario>().SetInformations(horario);
             GetComponentInChildren<GeradorHorario>().SetInformations(horario);
         }
+        Debug.Log(horarioNotificacao.Length);
         if (horarioNotificacao.Length > 0)
         {
-            toggle_addNotificacao.change();
+            toggle_addNotificacao.setStateTrue();
             GetComponentInChildren<notificacao>().SetInformations(horarioNotificacao);
         }
     }

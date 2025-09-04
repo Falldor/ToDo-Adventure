@@ -6,26 +6,21 @@ public class lojaController : MonoBehaviour
 {
     public static lojaController Instance;
     [SerializeField] private TextMeshProUGUI _textGold;
-    [SerializeField] private GameObject _lojaViewPrefab;
-    [SerializeField] private GameObject ponto;
 
     void Awake() => Instance = this;
     void Start()
     {
-        _textGold.text = "Gold: 3";
-        _lojaViewPrefab = Instantiate(_lojaViewPrefab, transform);
-        _lojaViewPrefab.SetActive(false);
+        if (PlayerPrefs.HasKey("Gold"))
+        {
+          // _textGold.text = $"Gold: {PlayerPrefs.GetInt("Gold")}";
+        }
+        else { _textGold.text = "Gold: 0"; }
+
     }
 
-    public void openView()
+    public void openView(Button button)
     {
-        _lojaViewPrefab.transform.position = ponto.transform.position;
-        _lojaViewPrefab.gameObject.SetActive(true);
-    }
-
-    void OnApplicationQuit()
-    {
-        _lojaViewPrefab = _lojaViewPrefab.gameObject;
+        ViewController.Instance.OpenView(nomesPrefabs.ViewLoja, button);
     }
 
     public int GetDinheiro()
@@ -40,7 +35,16 @@ public class lojaController : MonoBehaviour
 
     public void AddDinheiro(int valor)
     {
-        _textGold.text = "Gold: " + (int.Parse(_textGold.text.Split(":")[1]) + valor); 
+        if (GetDinheiro() + valor >= 0)
+        {
+            _textGold.text = "Gold: " + (int.Parse(_textGold.text.Split(":")[1]) + valor);
+        }
+        
+    }
+
+    void OnApplicationQuit()
+    {
+        PlayerPrefs.SetInt("Gold", GetDinheiro());
     }
 
 }

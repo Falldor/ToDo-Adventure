@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf2e08fb783f2a4fadad2e37c37dfed, type: 3}
+  m_Name: PrimeiraTarefaConcluida
+  m_EditorClassIdentifier: 
+  Falas:
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - Meus parabens por concluir sua primeira tarefa, fico muito feliz com isso.
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "Voc\xEA lembra que eu tinha falado toda vez que voc\xEA completa uma tarefa
+      voc\xEA ganho dinheiro?"
+  - Personagem: {fileID: 11400000, guid: 606132c7d1a3fb54e9c56641e35c6780, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "Logico sim, essa \xE9 a melhor parte!"
+  - Personagem: {fileID: 11400000, guid: fb90a89dded6b0d4385fdab2a9e677af, type: 2}
+    IdDaExpressao: 0
+    TextoDasFalas:
+    - "Mas dependendo da sua eficiencia, voc\xEA ganha mais dinehiro ainda."
+    - "A eficiencia \xE9 referente a cor desse elemento no meio na parte superior
+      da tela."
+    - "Se for vermelho voc\xEA n\xE3o ganha nenhum bonus."
+    - "se for amarelo o dinheiro que voc\xEA ganhar tera um bonus de 2 vezes."
+    - "se for verde o dinheiro que voc\xEA ganhar tera um bonus de 3 vezes."
+    - "e como esse elemento muda de cor, ele \xE9 referente a qual a sua meta de
+      tarefas do dia, se voc\xEA clicar nele voc\xEA podera aumentar ou diminuar
+      a sua meta"
+    - "e como esse elemento muda de cor, ele \xE9 referente a qual a sua meta de
+      tarefas do dia, se voc\xEA clicar nele voc\xEA podera aumentar ou diminuar
+      a sua meta."
+    - se a quantidade de tarefas feitas for menor que 40% ficara na cor vermelha,
+      se for entre 40% e 70% amarelo e acima de 70% verde.
+    - "E por fim mas n\xE3o menos importante, se voc\xEA quiser ver as suas estatisticas
+      clique no icone do canto esquerdo na parte de cima e voc\xEA tera todas as
+      suas informa\xE7\xF5es desde o inicio."

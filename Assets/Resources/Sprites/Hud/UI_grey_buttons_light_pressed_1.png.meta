@@ -272,7 +272,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,6 +281,50 @@ TextureImporter:
       bones: []
       spriteID: 37b26621710532e4db5a55ac4f7f9f9d
       internalID: 4414989158202360592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_grey_buttons_light_pressed_1_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23abcc464da5d3f4eb455b3d3da156cb
+      internalID: 1052996299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_grey_buttons_light_pressed_1_7
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e7a510021cb9f45afbeaa0e5e7280b
+      internalID: -288739458
       vertices: []
       indices: 
       edges: []
@@ -305,6 +349,8 @@ TextureImporter:
       UI_grey_buttons_light_pressed_1_3: -8039031626063536853
       UI_grey_buttons_light_pressed_1_4: 7177314236675403377
       UI_grey_buttons_light_pressed_1_5: 4414989158202360592
+      UI_grey_buttons_light_pressed_1_6: 1052996299
+      UI_grey_buttons_light_pressed_1_7: -288739458
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

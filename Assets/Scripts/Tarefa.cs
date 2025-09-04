@@ -25,7 +25,7 @@ public class Tarefa : MonoBehaviour
         this._textoTarefa.text = textoTarefa;
         this._id = id;
         _tempoRestante = data;
-        Debug.Log(_tempoRestante);
+        
     }
 
     public void CreateTarefa(int id, string textoTarefa, DateTime data, int[] horarioNotificacao)
@@ -47,7 +47,7 @@ public class Tarefa : MonoBehaviour
         {
             if (DateTime.Now.ToString("HH:mm") == _tempoRestante.ToString("HH:mm"))
             {
-                Destroy(gameObject);// add que quando destruir inimigos ficam mais forte
+                delete();
             }
         }
     }
@@ -55,8 +55,7 @@ public class Tarefa : MonoBehaviour
 
     public void TarefaConcluida()
     {
-        //lojaController.Instance.AddDinheiro(1);
-        //TarefasController.Instance.SetNumTarefasConcluidas(1);
+        lojaController.Instance.AddDinheiro(calculaRecompensa());
         EventsManager.instance.TarefaConcluida();
         TarefasController.Instance.TarefaComplete(_id);
         Destroy(gameObject);
@@ -85,6 +84,7 @@ public class Tarefa : MonoBehaviour
                 if (horarioNotificacao.Length > 0)
                 {
                     _tempoNotificao = horarioNotificacao;
+                    gameObject.AddComponent<sendNotification>();
                     GetComponent<sendNotification>().createNotification(textoTarefa, calculaData(data, horarioNotificacao));
                 }
                 else
@@ -135,6 +135,18 @@ public class Tarefa : MonoBehaviour
         } else { return "null"; }
     }
 
-    
+    private int calculaRecompensa()
+    {
+        double eficiencia = MetaController.instance.GetEficiencia();
+        if (eficiencia < 40)
+        {
+            return 1;
+        }
+        else if (eficiencia >= 40 && eficiencia <= 70)
+        {
+            return 2;
+        }
+        else { return 3; }
+    }
 
 }

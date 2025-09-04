@@ -15,6 +15,7 @@ public class sendNotification : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        Debug.Log($"{DateTime.Now.ToString("HH:mm")} == {tempoNotificacao.ToString("HH:mm")}");
         if (DateTime.Now.ToString("HH:mm") == tempoNotificacao.ToString("HH:mm"))
         {
             NotificacaoController.Instance.sendNotification(textTarefa);

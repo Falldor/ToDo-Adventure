@@ -26,7 +26,6 @@ public class Enemy : MonoBehaviour
         while (transform.position.x > posXFinal)
         {
             transform.position = new Vector2(transform.position.x - velocidade * Time.deltaTime, transform.position.y);
-            Debug.Log(transform.position);
             yield return new WaitForSeconds(0.01f);
         }
         animator.SetBool("walking", false);
@@ -34,16 +33,17 @@ public class Enemy : MonoBehaviour
 
     private void ataque()
     {
-        StartCoroutine(MoveToPosition(transform.position.x + 2));
         animator.SetTrigger("atacando");
-        StartCoroutine(MoveToPosition(transform.position.x - 2));
+        lojaController.Instance.AddDinheiro(-1);
     }
 
     public void DanoRecebido(int valor)
     {
         Debug.Log("colidiu");
         animator.SetTrigger("dano");
+        Debug.Log(valor);
         vida -= valor;
+        
     }
 
     public void Dano()

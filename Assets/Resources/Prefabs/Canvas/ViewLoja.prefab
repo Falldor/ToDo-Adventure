@@ -337,7 +337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Espada
+  m_text: Cajado
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6cc5b19d78105f74d933fc7537610c99, type: 2}
   m_sharedMaterial: {fileID: -520107438813824222, guid: 6cc5b19d78105f74d933fc7537610c99, type: 2}

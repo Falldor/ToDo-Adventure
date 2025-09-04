@@ -12,6 +12,6 @@ public class DataEstatistica : Data
     {
         qtdTarefasCriadas = qtdCriadas;
         qtdTarefasDeletadas = qtdDeletadas;
-        qtdTarefasConcluidas = qtdDeletadas;
+        qtdTarefasConcluidas = qtdConcluidas;
     }
 }

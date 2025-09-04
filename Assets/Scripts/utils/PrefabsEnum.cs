@@ -1,5 +1,7 @@
 public enum nomesPrefabs
 {
     CriarTarefa,
-    MetaTarefasConfig
+    MetaTarefasConfig,
+    ViewEstatistica,
+    ViewLoja
 }

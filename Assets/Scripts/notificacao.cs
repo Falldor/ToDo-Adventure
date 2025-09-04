@@ -68,8 +68,10 @@ public class notificacao : MonoBehaviour
 
     public void SetInformations(int[] horario)
     {
+        Debug.Log($"{horario[0]},{horario[1]},{horario[2]}");
         _diasInput.text = horario[0].ToString("00");
         _horasInput.text = horario[1].ToString("00");
         _minutosInput.text = horario[2].ToString("00");
+        Debug.Log($"{ _diasInput.text},{ _horasInput.text},{_minutosInput.text}");
     }
 }

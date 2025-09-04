@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55b4d7fb2b91be5459cc255a03ce7f2d, type: 3}
+  m_Script: {fileID: 11500000, guid: f48772d37c473f643825bd984a3f9142, type: 3}
   m_Name: Player
   m_EditorClassIdentifier: 
-  Nome: 
+  Nome: Aventureiro
   Expressoes:
   - {fileID: -5445558754949953398, guid: 43bc228c84855d343bf19e65be57b6f2, type: 3}
